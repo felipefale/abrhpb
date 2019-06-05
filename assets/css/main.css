@@ -102,6 +102,26 @@ img {display: block;width: 100%;}
     margin-bottom: 2rem;
 }
 
+.bg-intro {
+    padding: 40px 0;
+    text-align: center;
+    color: var(--white);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.bg-intro.assoc {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/bg-associacao.png);
+}
+
+.bg-intro.sobre {
+    background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/bg-quem-somos.png);
+}
+
 /*MAIN HEADER
 ------------------------------------------------------------*/
 
@@ -115,12 +135,27 @@ img {display: block;width: 100%;}
 
 .main_header__menu {
     display: flex;
+    margin-top: 30px;
 }
 
 .main_header__menu a {
     margin: 0 10px;
     color: var(--blue-base);
     font-weight: bold;
+}
+
+.main_header__menu a:after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    width: 0%;
+    height: 3px;
+    background-color: var(--blue-base);
+    transition: .3s all ease;
+}
+
+.main_header__menu a:hover:after {
+    width: 100%;
 }
 
 .main_header--btn_mobile {
@@ -136,6 +171,7 @@ img {display: block;width: 100%;}
     .main_header__menu {
         flex-direction: column;
         display: none;
+        margin-top: 0;
     }
 
     .main_header__menu.active {
@@ -337,4 +373,63 @@ img {display: block;width: 100%;}
         display: block;
         margin: 0 auto 20px;
     }
+}
+
+
+/* PAGE ASSOCIATION
+------------------------------------------------------------*/
+
+.advantages__item {
+    flex: 1 1 calc(50% - 20px);
+    margin: 0 10px 20px;
+}
+
+.advantages__item p {
+    margin-bottom: 20px;
+}
+
+.advantages__item a {
+    color: var(--blue-base);
+}
+
+/* PAGE ABOUT
+------------------------------------------------------------*/
+.about__item {
+    flex: 1 1 calc(50% - 20px);
+    margin: 0 10px 20px;
+}
+
+.about__item p {
+    margin-bottom: 20px;
+}
+
+.motivation {
+    background-color: var(--support-gray);
+}
+
+.motivation__item {
+    flex: 1 1 calc(50% - 20px);
+    margin: 0 10px 20px;
+}
+
+.motivation__item--values {
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+.motivation__item--values li {
+    margin: 0 10px;
+}
+
+.statute__item {
+    flex: 1 1 calc(50% - 20px);
+    margin: 0 10px 20px;
+}
+
+.statute p{
+    margin-bottom: 10px;
+}
+
+.statute__item a {
+    color: var(--blue-base);
 }
