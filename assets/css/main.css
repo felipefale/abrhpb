@@ -88,7 +88,7 @@ img {display: block;width: 100%;}
 
 
 @media (max-width: 768px){
-    .container {
+    .container, .d-flex  {
         flex-direction: column;
     }
 
@@ -432,4 +432,97 @@ img {display: block;width: 100%;}
 
 .statute__item a {
     color: var(--blue-base);
+}
+
+@media (max-width: 768px){
+
+    .motivation__item--values li {
+        margin-bottom: 20px;
+    }
+
+    .motivation__item--values li:last-of-type {
+        margin-bottom: 0;
+    } 
+}
+
+/* PAGE INTERSHIP 
+------------------------------------------------------------*/
+.assign .association__item{
+    flex: 0 0 calc(30% - 20px);
+    margin: 0 10px 20px;
+}
+
+.assign ion-icon {
+    color: #FFF;
+    font-size: 5rem;
+}
+
+
+.assign_info {
+    background-color: var(--support-gray);
+}
+
+.assign_info__list li {
+    margin-bottom: 20px;
+}
+
+.assign_info_box {
+    flex: 1 1 calc(50% - 20px);
+    margin: 0 10px 20px;
+}
+
+.assign_info_box p {
+    margin-bottom: 20px;
+}
+
+/* PAGE EVENTS 
+------------------------------------------------------------*/
+.events_list {
+    background-color: var(--support-gray);
+}
+
+.next_event .events__item {
+    background-color: var(--support-gray);
+}
+
+/* PAGE PROVIDERS 
+------------------------------------------------------------*/
+.providers_item {
+    flex: 1 1 calc(25% - 20px);
+    margin: 0 10px 20px;
+}
+
+/* PAGE CONTACT 
+------------------------------------------------------------*/
+
+.contact_form, .contact_list {
+    flex: 1 1 calc(50% - 20px);
+    margin: 0 10px 20px;
+}
+
+.contact_form button {
+    padding: 5px 15px;
+    border: none;
+    color: #FFF;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.contact_list li {
+    margin-bottom: 20px;
+}
+
+.contact_form input, .contact_form textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    width: 100%;
+    border: 1px solid var(--blue-base);
+}
+
+.contact_form select {
+    width: calc(50% - 20px);
+    float: left;
+    padding: 10px;
+    border: 1px solid var(--blue-base);
+    margin: 0 10px 20px;
 }
