@@ -36,6 +36,11 @@ img {display: block;width: 100%;}
 .btn-grad {background-image: -webkit-gradient(linear, left top, right top, from(#314755), color-stop(51%, #26a0da), to(#314755));background-image: -webkit-linear-gradient(left, #314755 0%, #26a0da 51%, #314755 100%);background-image: -o-linear-gradient(left, #314755 0%, #26a0da 51%, #314755 100%);background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%)}
 .btn-grad:hover { background-position: right center; }
 
+.w50 {
+    width: 50%!important;
+    margin: 0 10px 20px;
+}
+
 .d-flex {
     display: flex;
 }
@@ -98,6 +103,15 @@ img {display: block;width: 100%;}
     }
 }
 
+.grid-6 {
+    flex: 1 1 calc(50% - 20px);
+}
+
+.grid-4 {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 0 10px 20px;
+}
+
 .mb-2 {
     margin-bottom: 2rem;
 }
@@ -121,6 +135,7 @@ img {display: block;width: 100%;}
 .bg-intro.sobre {
     background-image: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url(../img/bg-quem-somos.png);
 }
+
 
 /*MAIN HEADER
 ------------------------------------------------------------*/
@@ -525,4 +540,95 @@ img {display: block;width: 100%;}
     padding: 10px;
     border: 1px solid var(--blue-base);
     margin: 0 10px 20px;
+}
+
+/* PAGE SINGLE SIGNIN PROFESSIONAL 
+------------------------------------------------------------*/
+.form_sign_prof label {
+    margin: 0 10px 20px;
+    width: calc(50% - 20px);
+    float: left;
+    
+}
+
+.form_sign_prof button {
+    padding: 5px 15px;
+    color: var(--white);
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form_sign_prof fieldset {
+    margin-bottom: 20px;
+}
+
+.form_sign_prof input {
+    padding: 10px;
+    width: 100%;
+}
+
+.form_sign_prof select {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.form_sign_prof textarea {
+    width: 100%;
+    float: left;
+    padding: 10px;
+}
+
+.form_sign_prof__desc {
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px){
+    .form_sign_prof select, .form_sign_prof label {
+        width: calc(100% - 20px);
+        margin: 0 10px 20px;
+    }
+
+    .form_sign_prof__desc, .form_sign_prof h3 {
+        padding: 0 10px;
+    }
+}
+
+/* PAGE SINGLE SIGNIN BUSINESS 
+------------------------------------------------------------*/
+
+/* PAGE SINGLE SIGNIN STUDENTS 
+------------------------------------------------------------*/
+
+/* PAGE SINGLE CONTENT
+------------------------------------------------------------*/
+.intro_single {
+    padding: 40px 0;
+    margin-bottom: 40px;
+    background-color: var(--support-gray);
+    background: url(../img/bg-single.png);
+    color: #FFF;
+}
+
+.single_title {
+    margin-bottom: 0;
+}
+
+.single article {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 40px;
+}
+
+.single p {
+    margin-bottom: 20PX;
+}
+
+.single_img_hero {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    margin-bottom: 20px;
 }

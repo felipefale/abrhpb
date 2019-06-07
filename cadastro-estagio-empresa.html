@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ABRH-PB - Associação Brasileira de Recursos Humanos</title>
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Open+Sans:300,400,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+
+    <header class="main_header">
+        <div class="container justify-between align-center">
+            <a href="./" class="main_header__logo">
+                <img src="assets/img/logo-abrhpb.png" alt="Associação Brasileira de Recursos Humanos"
+                    title="Associação Brasileira de Recursos Humanos">
+            </a>
+
+            <span class="main_header--btn_mobile">
+                <ion-icon name="menu"></ion-icon>
+            </span>
+            <ul class="main_header__menu">
+                <li><a href="associe-se.html">Associe-se</a></li>
+                <li><a href="quem-somos.html">Quem Somos</a></li>
+                <li><a href="estagio.html">Estágio</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="artigos.html">Artigos</a></li>
+                <li><a href="fornecedores-rh.html">Fornecedores de RH</a></li>
+                <li><a href="contato.html">Fale Conosco</a></li>
+            </ul>
+        </div>
+    </header>
+
+
+    <div class="bg-intro sobre">
+        <p>Estágios</p>
+    </div>
+
+    <section class="section form_sign_prof">
+        <div class="container flex-column">
+            <p class="form_sign_prof__desc">Cadastro SUA Empresa ea vaga available Se preferir, Entre los Contato com a
+                ABRH-PB parágrafo Maiores Informations nos fones: (83) 3243.3015, 3044.6176 UO atraves do e-mail:
+                <strong>abrhpb@abrhpb.com.br</strong></p>
+
+            <form action="">
+
+                <fieldset>
+                    <legend>
+                        <p><strong>Cadastre sua empresa</strong></p>
+                    </legend>
+                    <label>
+                        <p>Empresa:</p>
+                        <input type="text" name="empresaCompleto">
+                    </label>
+                    <label>
+                        <p>CNPJ:</p>
+                        <input type="text" name="cnpj">
+                    </label>
+                    <label>
+                        <p>Telefone:</p>
+                        <input type="number" name="telefone">
+                    </label>
+                    <label>
+                        <p>Fax:</p>
+                        <input type="text" name="fax">
+                    </label>
+                    <label>
+                        <p>E-mail:</p>
+                        <input type="email" name="email">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>
+                        <p><strong>Endereço comercial</strong></p>
+                    </legend>
+
+
+                    <label>
+                        <p>CEP:</p>
+                        <input type="number" name="cepComercial">
+                    </label>
+
+                    <label>
+                        <p>Rua:</p>
+                        <input type="text" name="rua">
+                    </label>
+
+                    <label>
+                        <p>Número:</p>
+                        <input type="number" name="numero">
+                    </label>
+
+                    <label>
+                        <p>Bairro</p>
+                        <input type="text" name="bairroEstudante">
+                    </label>
+                    <label>
+                        <p>Cidade</p>
+                        <input type="text" name="cidadeEstudante">
+                    </label>
+                    <select id="estado" name="estadoEstudante" class="w50">
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espírito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                        <option value="ES">Estrangeiro</option>
+                    </select>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Responsável</strong></legend>
+                    <label>
+                        <p>Nome:</p>
+                        <input type="text" name="nome">
+                    </label>
+                    <label>
+                        <p>Cargo:</p>
+                        <input type="text" name="cargoResponsavel">
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend><strong>Sobre o Estágio</strong></legend>
+                    <label>
+                        <p>Área:</p>
+                        <select name="area" id="area">
+                            <option value="Administração Comercial/Vendas">Administração Comercial/Vendas</option>
+                            <option value="Administração de Empresas">Administração de Empresas</option>
+                            <option value="Administração Pública">Administração Pública</option>
+                            <option value="Advocacia/Jurídica">Advocacia/Jurídica</option>
+                            <option value="Arquitetura/Urbanismo">Arquitetura/Urbanismo</option>
+                            <option value="Arquivologia">Arquivologia</option>
+                            <option value="Artes ">Artes </option>
+                            <option value="Artes Gráficas">Artes Gráficas</option>
+                            <option value="Artes Plasticas">Artes Plasticas</option>
+                            <option value="Atend. a cliente - Bares e Restaurantes">Atend. a cliente - Bares e
+                                Restaurantes</option>
+                            <option value="Atend. a cliente - Telefonistas/Recepcionista">Atend. a cliente -
+                                Telefonistas/Recepcionista</option>
+                            <option value="Atend. a cliente - Telemarketing/Call Center">Atend. a cliente -
+                                Telemarketing/Call Center</option>
+                            <option value="Atend. a cliente">Atend. a cliente</option>
+                            <option value="Auditoria">Auditoria</option>
+                            <option value="Bancos">Bancos</option>
+                            <option value="Biblioteconomia">Biblioteconomia</option>
+                            <option value="Biologia/Ciências Biológicas">Biologia/Ciências Biológicas</option>
+                            <option value="Biomedicina">Biomedicina</option>
+                            <option value="Ciências Sociais">Ciências Sociais</option>
+                            <option value="Cinema">Cinema</option>
+                            <option value="Comércio Exterior">Comércio Exterior</option>
+                            <option value="Compras">Compras</option>
+                            <option value="Comunicação">Comunicação</option>
+                            <option value="Construção Civil">Construção Civil</option>
+                            <option value="Contabilidade">Contabilidade</option>
+                            <option value="Controladoria">Controladoria</option>
+                            <option value="Culinária/Gastronomia">Culinária/Gastronomia</option>
+                            <option value="Desenho Industrial">Desenho Industrial</option>
+                            <option value="Design de Interiores">Design de Interiores</option>
+                            <option value="Design Gráfico">Design Gráfico</option>
+                            <option value="Ecologia/Meio Ambiente">Ecologia/Meio Ambiente</option>
+                            <option value="Economia">Economia</option>
+                            <option value="Enfermagem">Enfermagem</option>
+                            <option value="Engenharia de Alimentos">Engenharia de Alimentos</option>
+                            <option value="Engenharia Civil">Engenharia Civil</option>
+                            <option value="Engenharia Eletronica">Engenharia Eletronica</option>
+                            <option value="Engenharia Eletrotécnica">Engenharia Eletrotécnica</option>
+                            <option value="Engenharia Mecânica">Engenharia Mecânica</option>
+                            <option value="Engenharia Metalurgica e de Materiais">Engenharia Metalurgica e de Materiais
+                            </option>
+                            <option value="Engenharia de Minas">Engenharia de Minas</option>
+                            <option value="Engenharia de Produção">Engenharia de Produção</option>
+                            <option value="Engenharia Qui&shy;mica">Engenharia Qui&shy;mica</option>
+                            <option value="Engenharia - Outras">Engenharia - Outras</option>
+                            <option value="Ensino Superior e Pesquisa">Ensino Superior e Pesquisa</option>
+                            <option value="Ensino - Outros">Ensino - Outros</option>
+                            <option value="Entretenimento">Entretenimento</option>
+                            <option value="Esportes">Esportes</option>
+                            <option value="Estética">Estética</option>
+                            <option value="Farmacia">Farmacia</option>
+                            <option value="Filosofia">Filosofia</option>
+                            <option value="Finanças">Finanças</option>
+                            <option value="Fiscal">Fiscal</option>
+                            <option value="Fisica">Fisica</option>
+                            <option value="Fisioterapia">Fisioterapia</option>
+                            <option value="Fonoaudiologia">Fonoaudiologia</option>
+                            <option value="Geografia">Geografia</option>
+                            <option value="Geologia">Geologia</option>
+                            <option value="Gestão Empresarial">Gestão Empresarial</option>
+                            <option value="História">História</option>
+                            <option value="Hotelaria">Hotelaria</option>
+                            <option value="Informática/T.I.">Informática/T.I.</option>
+                            <option value="Internet">Internet</option>
+                            <option value="Jornalismo">Jornalismo</option>
+                            <option value="Letras">Letras</option>
+                            <option value="Logística">Logística</option>
+                            <option value="Manutenção Industrial">Manutenção Industrial</option>
+                            <option value="Manutençãoo Predial">Manutençãoo Predial</option>
+                            <option value="Marketing">Marketing</option>
+                            <option value="Matemática/Estatística">Matemática/Estatística</option>
+                            <option value="Medicina/Hospitalar">Medicina/Hospitalar</option>
+                            <option value="Meteorologia">Meteorologia</option>
+                            <option value="Mineração">Mineração</option>
+                            <option value="Moda">Moda</option>
+                            <option value="Museologia">Museologia</option>
+                            <option value="Música">Música</option>
+                            <option value="Nutrição">Nutrição</option>
+                            <option value="Oceanografia">Oceanografia</option>
+                            <option value="Odontologia">Odontologia</option>
+                            <option value="Organização de Eventos/Produção Cultural">Organização de Eventos/Produção
+                                Cultural</option>
+                            <option value="Organização e Métodos">Organização e Métodos</option>
+                            <option value="Pesquisa de Mercado">Pesquisa de Mercado</option>
+                            <option value="Petrolífera">Petrolífera</option>
+                            <option value="Produção/Fabricação">Produção/Fabricação</option>
+                            <option value="Propaganda">Propaganda</option>
+                            <option value="Psicologia">Psicologia</option>
+                            <option value="Qualidade">Qualidade</option>
+                            <option value="Química">Química</option>
+                            <option value="Radialismo e Televisão">Radialismo e Televisão</option>
+                            <option value="Recursos Humanos">Recursos Humanos</option>
+                            <option value="Relações Internacionais">Relações Internacionais</option>
+                            <option value="Relações Públicas">Relações Públicas</option>
+                            <option value="Secretariado">Secretariado</option>
+                            <option value="Segurança e Saúde no Trabalho">Segurança e Saúde no Trabalho</option>
+                            <option value="Segurança Patrimonial">Segurança Patrimonial</option>
+                            <option value="Seguros">Seguros</option>
+                            <option value="Serviço Social">Serviço Social</option>
+                            <option value="Serviços Administrativos">Serviços Administrativos</option>
+                            <option value="Serviços Domésticos">Serviços Domésticos</option>
+                            <option value="Serviços Especializados - Açougue">Serviços Especializados - Açougue</option>
+                            <option value="ServiÃ§os Especializados - Padaria/Confeitari">ServiÃ§os Especializados -
+                                Padaria/Confeitari</option>
+                            <option value="Serviços Especializados - Peixaria">Serviços Especializados - Peixaria
+                            </option>
+                            <option value="Serviços Gerais">Serviços Gerais</option>
+                            <option value="Serviços Técnicos - Elétricos">Serviços Técnicos - Elétricos</option>
+                            <option value="Serviços Técnicos - Eletrónicos">Serviços Técnicos - Eletrónicos</option>
+                            <option value="Servios Técnicos - Mecânicos">Servios Técnicos - Mecânicos</option>
+                            <option value="Serviços Técnicos - Outros">Serviços Técnicos - Outros</option>
+                            <option value="Suprimentos">Suprimentos</option>
+                            <option value="Telecomunicações">Telecomunicações</option>
+                            <option value="Terapia Ocupacional">Terapia Ocupacional</option>
+                            <option value="Terceiro Setor/Responsabilidade Social">Terceiro Setor/Responsabilidade
+                                Social</option>
+                            <option value="Tradução/Interpretação">Tradução/Interpretação</option>
+                            <option value="Transporte Áereo">Transporte Áereo</option>
+                            <option value="Transporte Marítimo">Transporte Marítimo</option>
+                            <option value="Transporte Terrestre">Transporte Terrestre</option>
+                            <option value="Tributária">Tributária</option>
+                            <option value="Turismo">Turismo</option>
+                            <option value="Vendas">Vendas</option>
+                            <option value="Vendas - Varejo">Vendas - Varejo</option>
+                            <option value="Vendas Técnicas">Vendas Técnicas</option>
+                            <option value="Veterinária">Veterinária</option>
+                            <option value="Web Design">Web Design</option>
+                            <option value="Zoologia">Zoologia</option>
+                            <option value="Zootecnia">Zootecnia</option>
+                            <option value="Outras">Outras</option>
+                        </select>
+                    </label>
+                    <label>
+                        <p>Cargo:</p>
+                        <input type="text" name="cargo">
+                    </label>
+                    <label>
+                        <p>Quantidade Vagas:</p>
+                        <input type="number" name="qtdVagas">
+                    </label>
+                    <label>
+                        <p>Observações</p>
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="btn-grad">Cadastrar</button>
+
+            </form>
+
+        </div>
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="main_footer section">
+        <div class="container justify-between mb-2">
+            <ul>
+                <h3>Endereço</h3>
+                <li>
+                    <ion-icon name="navigate"></ion-icon> Av. Ingá 189<br>Manaíra - João Pessoa - PB
+                </li>
+                <li>
+                    <ion-icon name="navigate"></ion-icon> CEP: 58038-251
+                </li>
+            </ul>
+            <ul>
+                <h3>Contatos</h3>
+                <li>
+                    <ion-icon name="call"></ion-icon> (83) 3243.3015
+                </li>
+                <li>
+                    <ion-icon name="call"></ion-icon> (83) 98650.0671
+                </li>
+                <li>
+                    <ion-icon name="call"></ion-icon> (83) 98650.0673
+                </li>
+                <li>
+                    <ion-icon name="mail"></ion-icon> relacionamento@abrhpb.org.br
+                </li>
+            </ul>
+            <ul>
+                <h3>ABRH-PB</h3>
+                <li><a href="#">
+                        <ion-icon name="arrow-dropright-circle"></ion-icon> Apresentação
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="checkmark-circle"></ion-icon> Missão, Visão e Valores
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="cafe"></ion-icon> Diretoria
+                    </a></li>
+            </ul>
+            <ul>
+                <h3>Associe-se</h3>
+                <li><a href="#">
+                        <ion-icon name="person"></ion-icon> Profissional
+                    </a></li>
+                <li><a href="#">
+                        <ion-icon name="cafe"></ion-icon> Empresa
+                    </a></li>
+            </ul>
+        </div>
+        <div class="container justify-between">
+            <div class="main_footer__item text-center main_footer__newsletter">
+                <h3>Newsletter</h3>
+                <p>Para receber nossas promoções e novidades preencha o campo abaixo com o seu e-mail: </p>
+                <form action="">
+                    <input type="email" placeholder="Digite seu e-mail">
+                    <input type="submit" value="Enviar" class="btn-grad">
+                </form>
+            </div>
+            <div class="main_footer__item">
+                <h3 class="text-center">Afiliada</h3>
+                <a href="https://www.abrhbrasil.org.br/" target="_blank" rel="nofollow"><img
+                        src="assets/img/abrh-footer.png" alt=""></a>
+            </div>
+            <div class="main_footer__item text-center">
+                <h3>Redes Sociais</h3>
+                <ul class="d-flex justify-center">
+                    <li><a href="">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a></li>
+                    <li><a href="">
+                            <ion-icon name="logo-twitter"></ion-icon>
+                        </a></li>
+                    <li><a href="">
+                            <ion-icon name="logo-linkedin"></ion-icon>
+                        </a></li>
+                    <li><a href="">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery-3.4.1.min.js"></script>
+    <script src="assets/js/slick.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.5/dist/ionicons.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="assets/js/instafeed.min.js" charset="utf-8"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>
